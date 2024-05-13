@@ -1,0 +1,655 @@
+body {
+    margin: 0px;
+    padding-top: 60px;
+    display: block;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;               /* ширина scrollbar */
+}
+body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* цвет дорожки */
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #2F8311;    /* цвет плашки */
+    border-radius: 2px;       /* закругления плашки */
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 11px -5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    top: 0;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    user-select: none;
+    z-index: 1000;
+}
+#logo-box {
+    margin-left: 53px;
+    width: auto;
+    height: 70px;
+    display: flex;
+}
+#logo {
+    height: 100%;
+    width: 46px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#logo-text {
+    width: 289px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10px;
+    margin-left: 10px;
+}
+.logo-text-up {
+    font-size: 7pt;
+    font-family: 'Inter Thin';
+    font-weight: bold;
+}
+.logo-text-down {
+    font-size: 33pt;
+    font-weight: bold;
+    font-family: 'Inter bold';
+}
+#logo-box span {
+    line-height: 25px;
+    color: #2F8311;
+    width: auto;
+}
+
+#menu {
+    align-self: center;
+    margin-left: 290px;
+    width: 390px;
+    height: 21px;
+    font-size: 11pt;
+    font-family: 'Inter light';
+    display: flex;
+    justify-content: space-between;
+}
+#menu a {
+    text-decoration: none;
+    color: #323030;
+}
+#menu a:hover {
+    color: #81BE6C;
+}
+
+#number-box {
+    align-self: center;
+    height: 47px;
+    width: 223px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-family: 'Inter light';
+}
+#number-box span {
+    line-height: 25px;
+}
+#number-box #number {
+    color: #323030;
+    font-size: 18pt;
+}
+#number-box #position {
+    color: #323030;
+    font-family: 'Inter Thin';
+    font-weight: bold;
+}
+
+#search-box {
+    margin-right: 53px;
+    height: 30px;
+    width: auto;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#search-box input {
+    border: 1px solid #2F8311;
+}
+#search {
+    height: 100%;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    width: 200px;
+    color: #323030;
+}
+#submit {
+    height: 34px;
+    background-color: #2F8311;
+    font-family: 'Inter light';
+    font-size: 12pt;
+    width: 75px;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    color: white;
+}
+#submit:hover {
+    background-color: #81BE6C;
+    border-color: #81BE6C;
+}
+
+footer {
+    height: 211px;
+    background-color: #2D7912;
+    padding-left: 306px;
+    padding-right: 306px;
+    display: flex;
+    flex-direction: column;
+}
+#first-stage {
+    height: 73px;
+    border-bottom: 1px solid #A0A0A0;
+    color: white;
+    font-family: 'Inter light';
+    font-size: 12pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 10px;
+}
+#second-stage {
+    height: 127px;
+    color: white;
+    font-family: 'Inter light';
+    font-size: 12pt;
+    display: flex;
+    justify-content: space-between;
+}
+.two-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.info-box {
+    display: flex;
+    flex-direction: row;
+}
+.icon {
+    text-align: center;
+    height: 27px;
+    width: 27px;
+}
+.name {
+    background-image: url(../images/icons/house.png);
+    background-size: contain;
+    margin-right: 10px;
+}
+.mesto {
+    background-image: url(../images/icons/location.png);
+    background-size: contain;
+    margin-right: 10px;
+}
+.phone {
+    background-image: url(../images/icons/phone.png);
+    background-size: contain;
+    margin-right: 10px;
+}
+.mail {
+    background-image: url(../images/icons/mail.png);
+    background-size: contain;
+    margin-right: 10px;
+}
+.vk {
+    background-image: url(../images/icons/vk.png);
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.greeting {
+    height: 600px;
+    padding-left: 205px;
+    padding-right: 205px;
+    background-image: url(../images/greeting-back.png);
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+}
+.great-indo-box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.great-indo-box-title {
+    color: #2F8311;
+    font-family: 'Inter bold';
+    font-size: 22pt;
+}
+.great-indo-box-timetable {
+    margin-top: 51px;
+    font-family: 'Inter light';
+    font-size: 13pt;
+    color: #323030;
+}
+.great-indo-box-timetable ul {
+    list-style-type: none;
+}
+.greeting-img {
+    width: 50%;
+    height: 100%;
+    background-image: url(../images/kids.png);
+    background-size: 130%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.block {
+    height: auto;
+    padding-left: 205px;
+    padding-right: 205px;
+}
+.about {
+    background-color: #F0F0F0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+h2 {
+    color: #2F8311;
+    font-family: 'Inter bold';
+    font-size: 22pt;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.about-info {
+    width: 40%;
+    align-self: center;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #323030;
+}
+.about-span-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-span-box span {
+    margin-bottom: 25px;
+    font-family: 'Inter light';
+    font-size: 12pt;
+}
+.about-img {
+    width: 800px;
+    margin-top: 70px;
+    height: 450px;
+    background-image: url(../images/winter.jpg);
+    background-position: center;
+    background-size: 150%;
+    border-radius: 5px;
+    border: 6px solid #FFFFFF;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
+.workers {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.workers-area {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}
+.workers-area-worker {
+    display: flex;
+    justify-content: space-between;
+}
+.workers-area-worker-information {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    height: 100%;
+    justify-content: space-evenly;
+    font-family: 'Inter light';
+    font-size: 10pt;
+}
+.workers-area-worker-information-name {
+    font-family: 'Inter Bold';
+    font-size: 14pt;
+    color: #323030;
+
+}
+.workers-area-worker div {
+    transform: rotate(-2deg);
+    height: 276px;
+    width: 210px;
+    background-image: url('../images/director.jpg');
+    background-size: 100%;
+    border-radius: 5px;
+    border: 6px solid #FFFFFF;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
+.workers-area-worker-data {
+    font-size: 9pt;
+    font-family: 'Inter thin';
+}
+.slender {
+    margin-left: 5%;
+    margin-right: 5%;
+    border-left: 1px solid #A0A0A0;
+}
+.bottom-slender {
+    border-bottom: 1px solid #A0A0A0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.news {
+    width: 100%;
+    height: auto;
+}
+.news h2 {
+    margin-left: 205px;
+}
+.news-area {
+    padding-left: 330px;
+    padding-right: 330px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.news-area-img {
+    height: 354px;
+    width: 354px;
+    border-radius: 5px;
+    border: 6px solid #FFFFFF;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.new-1 {
+    padding-top: 0px;
+}
+.new-2 {
+    flex-direction: row-reverse;
+    background-color: #F0F0F0;
+    padding-top: 50px;
+}
+.new-3 {
+    padding-top: 50px;
+}
+.new-4 {
+    flex-direction: row-reverse;
+    background-color: #F0F0F0;
+    padding-top: 50px;
+}
+.news-area-information {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #323030;
+}
+.news-area-information div {
+    text-align: justify;
+    padding-left: 66px;
+    font-family: 'Inter light';
+    padding-right: 66px;
+    font-size: 11pt;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #A0A0A0;
+}
+.news-area-information h3 {
+    font-family: 'Inter bold';
+}
+.news-area-information span {
+    color: #2D7912;
+    align-self: flex-start;
+    padding-left: 66px;
+    font-family: 'Inter light';
+    font-size: 8pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 35px;
+}
+
+.title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.title h2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.sports {
+    display: flex;
+    flex-direction: column;
+    color: #323030;
+}
+.title-bottom-slender {
+    width: 35%;
+    height: 1px;
+    align-self: center;
+    border-bottom: 1px solid #2F8311;
+}
+.sports-area {
+    padding-left: 205px;
+    padding-right: 205px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.sports-area-information {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: #323030;
+    text-align: justify;
+    font-family: 'Inter light';
+}
+.sports-area-information div {
+    width: 827px;
+}
+.sports-area-information h3 {
+    align-self: flex-start;
+    margin-left: 50px;
+    font-family: 'Inter bold';
+    margin-top: 0px;
+}
+.sport-area-img {
+    height: 359px;
+    width: 520px;
+    border-radius: 5px;
+    border: 6px solid #FFFFFF;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.volleyball {
+    padding-top: 50px;
+    flex-direction: row-reverse;
+    background-color: #F0F0F0;
+}
+.volleyball .sports-area-information {
+    align-items: start;
+}
+.volleyball .sports-area-information div {
+    margin-left: 50px;
+}
+.volleyball .sports-area-information h3 {
+    margin-left: 0px;
+}
+.volleyball h3 {
+    margin-left: 0px;
+}
+.rugby {
+    padding-top: 50px;
+}
+.skiing {
+    background-color: #F0F0F0;
+    padding-top: 50px;
+    flex-direction: row-reverse;
+}
+.skiing .sports-area-information {
+    align-items: start;
+}
+.skiing .sports-area-information div {
+    margin-left: 50px;
+}
+.skiing .sports-area-information h3 {
+    margin-left: 0px;
+}
+.skiing h3 {
+    margin-left: 0px;
+}
+.polyathlon {
+    padding-top: 50px;
+}
+.sambo {
+    padding-top: 50px;
+    flex-direction: row-reverse;
+    background-color: #F0F0F0;
+}
+.sambo .sports-area-information {
+    align-items: start;
+}
+.sambo .sports-area-information div {
+    margin-left: 50px;
+}
+.sambo .sports-area-information h3 {
+    margin-left: 0px;
+}
+.sambo h3 {
+    margin-left: 0px;
+}
+.judo {
+    padding-top: 50px;
+}
+
+.sports-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 75px;
+    color: #323030;
+}
+.sports-btn span {
+    font-family: 'Inter light';
+    font-size: 22pt;
+}
+.sports-btn img {
+    height: 23px;
+    width: 23px;
+    background-image: url(../images/icons/arrow.svg);
+    background-size: contain;
+    background-position: center;
+    transition: transform 0.3s;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.sports-ul {
+    height: auto;
+    width: 1220px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    align-self: center;
+    padding-left: 100px;
+    border-bottom: 1px solid #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+}
+li {
+    font-family: 'Inter light';
+    font-size: 14pt;
+    line-height: 50px;
+    color: #323030;
+}
+a {
+    color: #323030;
+}
+.none-display-for-ul {
+    display: block;
+}
+.img-rotate {
+    transform: rotate(180deg);
+}
+.gto {
+    flex-direction: row-reverse;
+    margin-bottom: 220px;
+}
+.gto-info {
+    margin-left: 50px;
+    font-family: 'Inter light';
+    margin-top: 0px;
+}
+.gto div {
+    width: 650px;
+}
+
+ul {
+    display: none;
+}
+.special-ul {
+    height: auto;
+    width: 1220px;
+    margin-top: 20px;
+    align-self: center;
+    padding-left: 100px;
+    border-bottom: 1px solid #F0F0F0;
+    display: flex;
+    flex-direction: column;
+    padding-right: 100px;
+}
+.special-align {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.li-2 ul {
+    height: 500px;
+    width: 100%;
+    background-image: url(../images/Структура.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.base ul{
+    background-image: url(../images/base.png);
+    height: 650px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+@font-face {
+    font-family: 'Inter bold';
+    src: url(../fonts/Inter/Inter-Bold.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Inter light';
+    src: url(../fonts/Inter/Inter-Light.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Inter Regular';
+    src: url(../fonts/Inter/Inter-Regular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Inter Thin';
+    src: url(../fonts/Inter/Inter-Thin.otf) format('opentype');
+}
