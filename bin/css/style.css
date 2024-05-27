@@ -635,7 +635,65 @@ ul {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
+.newsImg {
+    height: 492px;
+    width: 492px;
+    background-color: #2F8311;
+    border-radius: 15px;
+}
+.adminInputArea {
+    display: flex;
+}
+.adminText {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+.adminText input {
+    width: 1082px;
+    height: 62px;
+    border: 1px solid #2F8311;
+    border-radius: 3px;
+}
+.adminForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.AdminNewsText  {
+    margin-top: 35px;
+    height: 385px;
+    border: 1px solid #2F8311;
+    border-radius: 3px;
+}
+.adminTegArea {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 224px);
+}
+.adminSlender {
+    margin-top: 30px;
+    border-bottom: 1px solid #A0A0A0;
+    width: calc(100% - 224px);
+}
+.adminTegButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2F8311;
+    width: 224px;
+    height: 53px;
+    border-radius: 3px;
+    color: white;
+    font-family: "Inter light";
+}
+.adminTegs {
+    color: #2F8311;
+    font-family: 'Inter light';
+}
 
 @font-face {
     font-family: 'Inter bold';
