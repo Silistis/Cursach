@@ -1,8 +1,5 @@
 <?
-    $title = 'Панель администратора';
-    if ($_COOKIE['access'] == 'not') {
-        header("Location: index.php");
-    }
+    $title = 'Ошибка 404 :(';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,18 +15,10 @@
 </head>
 <body>
     <? require('bin/parts/header.php'); ?>
-    <main>
-        <? require('bin/parts/admin/adminForm.php'); ?>
-        <div class="title">
-            <div class="title-bottom-slender"></div>
-                <h2>Новости в нашей школы</h2>
-                <div class="title-bottom-slender"></div>
-            </div>
-            <? require('bin/parts/news/news-blocks.php'); ?>
-        </div>
-    </main>
+        <main>
+            <div class="error404">Ошибка 404 - Страница не найдена :(</div>
+        </main>
     <? require('bin/parts/footer.php'); ?>
-    <script src="bin/js/largeImg.js"></script>
-    <script src="bin/js/admin.js"></script>
+    <script src="bin/js/special.js"></script>
 </body>
 </html>

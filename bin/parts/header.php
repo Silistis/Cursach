@@ -1,4 +1,4 @@
-<?
+<aф?
     $title = 'Главная';
 ?>
 <header>
@@ -18,12 +18,14 @@
     </div>
 
     <div id="number-box">
-        <span id="number">+7 (391) 61 7‑85-84</span>
+        <a href="tel:83916178584" id="number">+7 (391) 61 7‑85-84</a>
         <span id="position">с. Чечеул</span>
     </div>
-
-    <form action="" id="search-box">
-        <input type="text" name="search" id="search">
-        <input type="submit" value="Поиск" name="submit" id="submit"> 
-    </form>
+    <div class="searchBox">
+        <span id="specialButton">Версия для слабовидящих</span>
+        <form action="bin/php/find.php" id="search-box" method="post">
+            <input type="text" name="search" id="search">
+            <input type="submit" value="Поиск" name="submit" id="submit"> 
+        </form>
+    </div>
 </header>

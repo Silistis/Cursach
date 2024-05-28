@@ -109,7 +109,7 @@
             </div>
         </div>
     </div>
-    <div class="sports-ul li-1">
+    <div class="sports-ul special-ul li-1">
         <div class="sports-btn">
             <span>Документация</span>
             <img src="bin/images/icons/arrow.svg" class="img-btn">

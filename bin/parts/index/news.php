@@ -1,4 +1,32 @@
-<div class="news">
+< class="news">
+    <?
+        require_once('bin/php/db.php');
+
+        $sqlCount = $conn->query("SELECT count(*) FROM news");
+        $sqlData = $conn->query("SELECT * FROM news");
+        $row = $sqlCount->fetch_row();
+        $data = $sqlData->fetch_row();
+        $count = $row[0];
+
+        for ($i = 0; $count > $i; $i++) {
+            if (1 % 2 === 0) {
+                echo('
+                    <div class="news-area new-1">
+                        <img src="bin/images/1.jpg" class="news-area-img">
+                        <div class="news-area-information">
+                            <h3> </h3>
+                            <div>
+
+                            </div>
+                            <span> </span>
+                        </div>
+                    </div>
+                ');
+            } else {
+
+            }
+        }
+    ?>
     <h2>События и мероприятия</h2>
     <div class="news-area new-1">
         <img src="bin/images/1.jpg" class="news-area-img">
