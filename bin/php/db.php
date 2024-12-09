@@ -1,5 +1,5 @@
 <?
-$server = 'localhost';
+$server = 'MySQL-8.2';
 $password = '';
 $login = 'root';
 $db_name = 'olimpiec';

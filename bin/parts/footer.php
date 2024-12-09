@@ -9,30 +9,7 @@
     <div id="second-stage">
         <div class="two-box">
             <div class="info-box">
-                <div class="icon name"></div>
-                <div class="text-info">МБУ ДО СШ</div>
-            </div>
-            <div class="info-box">
-                <div class="icon mesto"></div>
-                <div class="text-info">663630, Красноярский край, Канский район, с. Чечеул, ул. Ленина, 29</div>
-            </div>
-        </div>
-        <div  class="two-box">
-            <div class="info-box">
-                <div class="text-info">ИНН 2450019453</div>
-            </div>
-            <div class="info-box">
-                <div class="text-info">ОГРН 1042401192690</div>
-            </div>
-        </div>
-        <div  class="two-box">
-            <div class="info-box">
-                <div class="icon mail"></div>
-                <div class="text-info">dush_kansk@gmail.com</div>
-            </div>
-            <div class="info-box">
-                <div class="icon phone"></div>
-                <div class="text-info">+7 (391) 617‑85-84</div>
+                <div class="text-info bs">663630, Красноярский край, Канский район, с. Чечеул, ул. Ленина, 29</div>
             </div>
         </div>
     </div>

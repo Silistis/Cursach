@@ -1,14 +1,5 @@
 <?
-    $title = 'Главная';
-    $dir = 'bin/images';
-    $images = scandir($dir);
-    setcookie('access', 'not', time() + 3600, '/Cursach');
-
-    $image_names = array();
-    foreach ($images as $image) if (is_file($dir . '/' . $image) && strpos($image, '.jpg') !== false) $image_names[] = $image;
-
-    $_GET['image_names'] = $image_names;
-    $_GET['dir'] = $dir;
+    $title = 'Новости';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,26 +10,19 @@
     <link rel="icon" href="bin/images/logo.png" type="image/x-icon">.
     <title><?= $title?></title>
     <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
-    <script src="https://lidrekon.ru/slep/js/uhpv-hover-full.min.js"></script>
-    <script src="bin/js/lib/hotKey.js"></script>
     <script src="bin/js/lib/jQuery.js"></script>
 </head>
 <body>
     <? require('bin/parts/header.php'); ?>
     <main>
-        <form id="register" method="post" action="bin/php/adminEnter.php">
-            <h2>Вход</h2>
-            <input type="login" placeholder="Логин" name="login">
-            <input type="password" placeholder="Пароль" name="password">
-            <input type="submit" value="Войти" class="sub">
-        </form>
-        <? require('bin/parts/index/greeting.php') ?>
-        <? require('bin/parts/index/about.php')?>
-        <? require('bin/parts/index/workers.php') ?>
-        <? require('bin/parts/news/news-blocks.php') ?>
+        <div class="title">
+            <div class="title-bottom-slender"></div>
+                <h2>Новости в нашей школы</h2>
+                <div class="title-bottom-slender"></div>
+            </div>
+        </div>
+        <? require('bin/parts/news/news-blocks.php'); ?>
     </main>
     <? require('bin/parts/footer.php'); ?>
-    <script src="bin/js/largeImg.js"></script>
-    <script src="bin/js/adminsForm.js"></script>
 </body>
 </html>

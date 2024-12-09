@@ -12,20 +12,7 @@
                 $i++;
                 if ($i % 2 == 0) {
                     echo '
-                        <div class="news-area new-1">
-                            <img src="'.$row["imgPath"].'" class="news-area-img">
-                            <div class="news-area-information">
-                                <h3>'.$row["title"].'</h3>
-                                <div>
-                                    '.$row["text"].'
-                                </div>
-                                <span>'.$row["tags"].'</span>
-                            </div>
-                        </div>
-                    ';
-                } else {
-                    echo '
-                    <div class="news-area new-2">
+                    <div class="news-area new-1">
                         <img src="'.$row["imgPath"].'" class="news-area-img">
                         <div class="news-area-information">
                             <h3>'.$row["title"].'</h3>
@@ -35,8 +22,21 @@
                             <span>'.$row["tags"].'</span>
                         </div>
                     </div>
-                    ';
-                }
+                ';
+                } else {
+                    echo '
+                    <div class="news-area new-1">
+                        <img src="'.$row["imgPath"].'" class="news-area-img">
+                        <div class="news-area-information">
+                            <h3>'.$row["title"].'</h3>
+                            <div>
+                                '.$row["text"].'
+                            </div>
+                            <span>'.$row["tags"].'</span>
+                        </div>
+                    </div>
+                ';
+                };
             }
         }
     ?>

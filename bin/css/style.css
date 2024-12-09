@@ -17,33 +17,33 @@ body::-webkit-scrollbar-thumb {
 
 header {
     width: 100%;
-    height: 80px;
+    height: 100px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 11px -5px rgba(0, 0, 0, 0.25);
     display: flex;
     top: 0;
     flex-direction: row;
     position: fixed;
-    justify-content: space-between;
+    justify-content: center;
     user-select: none;
     z-index: 1000;
 }
 #logo-box {
-    margin-left: 53px;
-    width: auto;
-    height: 70px;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
 }
 #logo {
     height: 100%;
-    width: 46px;
+    width: 50px;
     background-image: url(../images/logo.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
 #logo-text {
-    width: 289px;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,17 +51,17 @@ header {
     margin-left: 10px;
 }
 .logo-text-up {
-    font-size: 7pt;
+    font-size: 8pt;
     font-family: 'Inter Thin';
     font-weight: bold;
 }
 .logo-text-down {
-    font-size: 33pt;
+    font-size: 40pt;
     font-weight: bold;
     font-family: 'Inter bold';
 }
 #logo-box span {
-    line-height: 25px;
+    line-height: 30px;
     color: #2F8311;
     width: auto;
 }
@@ -141,10 +141,11 @@ header {
 }
 
 footer {
-    height: 211px;
+    height: 100px;
+    padding-top: 10px;
     background-color: #2D7912;
-    padding-left: 306px;
-    padding-right: 306px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -153,7 +154,7 @@ footer {
     border-bottom: 1px solid #A0A0A0;
     color: white;
     font-family: 'Inter light';
-    font-size: 12pt;
+    font-size: 8pt;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -163,7 +164,7 @@ footer {
     height: 127px;
     color: white;
     font-family: 'Inter light';
-    font-size: 12pt;
+    font-size: 8pt;
     display: flex;
     justify-content: space-between;
 }
@@ -177,10 +178,14 @@ footer {
     display: flex;
     flex-direction: row;
 }
+.bs {
+    text-align: center;
+}
 .icon {
     text-align: center;
-    height: 27px;
-    width: 27px;
+    height: 20px;
+    background-repeat: no-repeat;
+    width: 20px;
 }
 .name {
     background-image: url(../images/icons/house.png);
@@ -206,6 +211,8 @@ footer {
     background-image: url(../images/icons/vk.png);
     background-size: contain;
     margin-right: 10px;
+    height: 50px;
+    width: 50px;
 }
 
 .greeting {
@@ -360,15 +367,15 @@ h2 {
     margin-left: 205px;
 }
 .news-area {
-    padding-left: 330px;
-    padding-right: 330px;
     padding-bottom: 50px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
 }
 .news-area-img {
-    height: 354px;
-    width: 354px;
+    height: 90%;
+    width: 90%;
     border-radius: 5px;
     border: 6px solid #FFFFFF;
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
@@ -376,16 +383,11 @@ h2 {
     background-repeat: no-repeat;
     object-fit: cover;
 }
-.new-1 {
-    padding-top: 50px;
-}
 .new-2 {
-    flex-direction: row-reverse;
     background-color: #F0F0F0;
-    padding-top: 50px;
 }
 .news-area-information {
-    width: 65%;
+    width: 90%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -394,15 +396,14 @@ h2 {
 }
 .news-area-information div {
     text-align: justify;
-    padding-left: 66px;
     font-family: 'Inter light';
-    padding-right: 66px;
-    font-size: 11pt;
+    font-size: 10pt;
     padding-bottom: 35px;
     border-bottom: 1px solid #A0A0A0;
 }
 .news-area-information h3 {
     font-family: 'Inter bold';
+    font-size: 13pt;
 }
 .news-area-information span {
     color: #2D7912;
@@ -424,6 +425,7 @@ h2 {
 .title h2{
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 10pt;
 }
 .sports {
     display: flex;
@@ -431,7 +433,7 @@ h2 {
     color: #323030;
 }
 .title-bottom-slender {
-    width: 35%;
+    width: 20%;
     height: 1px;
     align-self: center;
     border-bottom: 1px solid #2F8311;
