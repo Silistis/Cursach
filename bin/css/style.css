@@ -385,6 +385,7 @@ h2 {
     padding-top: 50px;
 }
 .news-area-information {
+    margin-left: 20px;
     width: 65%;
     height: 100%;
     display: flex;
@@ -781,6 +782,44 @@ ul {
     border: none;
     font-size: 12pt;
     text-align: center;
+}
+.adminRegBTN {
+    margin-bottom: 10px;
+    color: #2F8311;
+    font-family: 'Inter light';
+    border: none;
+    background: none;
+    font-size: 18pt;
+}
+.btnRegBOX {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.regNewsTitle {
+    margin-top: 20px;
+    height: 50px;
+    border: 1px solid rgb(41, 40, 40);
+    font-family: 'Inter bold';
+    font-size: 14pt;
+    width: 300px;
+    outline: none;
+}
+.regNewsText {
+    margin-top: 50px;
+    border: 1px solid rgb(41, 40, 40);
+    font-family: 'Inter light';
+    font-size: 10pt;
+    height: 60%;
+    width: 300px;
+    outline: none;
+}
+.adminEditBTN {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 12pt;
 }
 
 @font-face {
